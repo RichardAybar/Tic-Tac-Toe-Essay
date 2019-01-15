@@ -21,6 +21,7 @@ const grid = [
 
 Using this setup I can form columns and rows that can be called using grid[0][0], grid [0][1] and so on. This lets me pinpoint each tile and check it against other tiles, e.g.
 
+```
     for (let a = 0; a < 3; a++) {
       // check for win, horizontal
       if (grid[0][0] !== ' ' &&
@@ -28,6 +29,7 @@ Using this setup I can form columns and rows that can be called using grid[0][0]
       grid[0][0] === grid[0][2]) {
         return grid[0][0]
 }
+```
 
 
 Using the above inside a function will check for a horizontal win. We can put this code inside a function that checks for a win, as well as checking for every other possible win. After making a functioning board that checks for wins, I needed to implement logic to end game and not allow players to click anymore. It was also neccessary to add a fucntion that checks for a draw. This would consist of checking that all values on grid are taken and no Win requirements have been met.

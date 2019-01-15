@@ -30,7 +30,6 @@ const grid = [
 	Using this setup I can form columns and rows that can be called using grid[0][0], grid [0][1] and so on. This lets me pinpoint each tile and check it against other tiles, e.g.
 	
 ```
-
       for (let a = 0; a < 3; a++) {
         // check for win, horizontal
         if (grid[0][0] !== ' ' &&

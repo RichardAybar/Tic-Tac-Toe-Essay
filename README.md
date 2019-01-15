@@ -1,4 +1,4 @@
-#Tic-Tac-Toe-Essay
+# Tic-Tac-Toe-Essay
 
 My mission was to create a tic tac toe game in Javascript, using html, css and jquery. To start off we will need to set up our front end and back end. In this project we used github pages and heroku to host our app. After our setup is complete we can start with html in our text editor. First thing to do is create a board for our game, I used a table but there are many other options such as bootstrap or flexbox. We will need to create a 3 by 3 grid. After you have a grid we will target the inner html and populate with a token, in this case "X" or "O".
 

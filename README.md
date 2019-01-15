@@ -7,11 +7,12 @@
 
 ```javascript
 
-const grid = [
-    [' ', ' ', ' '],
-    [' ', ' ', ' '],
-    [' ', ' ', ' ']
-];
+    if (movesMade % 2 === 0) {
+      currentPlayer = playerOne
+    } else {
+      currentPlayer = playerTwo
+    }
+
 
 ```
 

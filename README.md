@@ -6,33 +6,28 @@
 
 
 ```javascript
-
     if (movesMade % 2 === 0) {
       currentPlayer = playerOne
     } else {
       currentPlayer = playerTwo
     }
-
-
 ```
 
 	I was not completely sure how to approach the game logic at first. Once I had an array setup for my grid I implemented some game logic to check for all 8 different win possibilities. I did this by checking to see if the "value" or player token of a particular tile in my grid was equal to other corresponding tiles that would cause a win. For example I checked to see if the top row was all the same by comparing the values of all those positions against eachother. When creating my grid I used an array with 3 empty arrays inside, filled with 3 empty values, like so:
 
 
 ```javascript
-
 const grid = [
     [' ', ' ', ' '],
     [' ', ' ', ' '],
     [' ', ' ', ' ']
 ];
-
 ```
 
 
 	Using this setup I can form columns and rows that can be called using grid[0][0], grid [0][1] and so on. This lets me pinpoint each tile and check it against other tiles, e.g.
 	
-```
+```javascript
       for (let a = 0; a < 3; a++) {
         // check for win, horizontal
         if (grid[0][0] !== ' ' &&
@@ -40,7 +35,6 @@ const grid = [
         grid[0][0] === grid[0][2]) {
           return grid[0][0]
 }
-
 ```
 
 

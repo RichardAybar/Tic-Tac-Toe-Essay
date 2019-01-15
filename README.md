@@ -4,11 +4,7 @@
 	To start off we will need to set up our front end and back end.
 	In this project we used github pages and heroku to host our app. 
 	After our setup is complete we can start with html in our text editor. 
-	First thing to do is create a board for our game, I used a table but there 
-	are many other options such as bootstrap or flexbox. We will need to create
-	a 3 by 3 grid. After you have a grid we will target the inner html and populate with a token, in this case "X" or "O".
-
-	Once I am able to complete this, I need to figure out a way to switch between X and O after each turn. Using modulus we can we can write a simple if else, or turnary statement indicating that the token value is X based on the number of  current moves modulus 2. In my app used the following code:
+	Fir\
 
 
 ```javascript

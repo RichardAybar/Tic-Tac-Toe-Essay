@@ -4,15 +4,14 @@
 
 	Once I am able to complete this, I need to figure out a way to switch between X and O after each turn. Using modulus we can we can write a simple if else, or turnary statement indicating that the token value is X based on the number of  current moves modulus 2. In my app used the following code:
 
-```
 
+    ```
     if (movesMade % 2 === 0) {
       currentPlayer = playerOne
     } else {
       currentPlayer = playerTwo
     }
-    
-    ```
+     ```
 
 	I was not completely sure how to approach the game logic at first. Once I had an array setup for my grid I implemented some game logic to check for all 8 different win possibilities. I did this by checking to see if the "value" or player token of a particular tile in my grid was equal to other corresponding tiles that would cause a win. For example I checked to see if the top row was all the same by comparing the values of all those positions against eachother. When creating my grid I used an array with 3 empty arrays inside, filled with 3 empty values, like so:
 
